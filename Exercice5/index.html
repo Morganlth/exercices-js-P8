@@ -4,20 +4,57 @@
     <title>Page sans Accessibilité</title>
 </head>
 <body>
-<h1>Titre de la Page</h1>
-<p>Ceci est un paragraphe de texte.</p>
+    <h1>Titre de la Page</h1>
+    <p>Ceci est un paragraphe de texte.</p>
 
-<!-- Formulaire sans étiquette pour les champs -->
-<form>
-    <input id="name" type="text" placeholder="Entrez votre nom">
-    <input id="email" type="email" placeholder="Entrez votre adresse e-mail">
-    <button type="submit">Envoyer</button>
-</form>
+    <!-- Formulaire sans étiquette pour les champs -->
+    <form>
+        <label
+        for="name"
+        >
+            Votre nom
+        </label>
 
-<!-- Image sans attribut alt -->
-<img src="assets/image.png" height=250>
+        <input
+        id="name"
+        type="text"
+        name="name"
+        placeholder="Entrez votre nom"
+        >
 
-<!-- Lien sans texte descriptif -->
-<a href="#">Cliquez ici</a>
+        <label
+        for="email"
+        >
+            Votre email
+        </label>
+
+        <input
+        id="email"
+        type="email"
+        name="email"
+        placeholder="Entrez votre adresse e-mail"
+        >
+
+        <button
+        type="submit"
+        >
+            Envoyer
+        </button>
+    </form>
+
+    <!-- Image sans attribut alt -->
+    <img
+    src="assets/image.png"
+    alt="Il n'existe aucun dossier assets et aucune image.png"
+    height=250
+    >
+
+    <!-- Lien sans texte descriptif -->
+    <a
+    href="#"
+    title="Un lien sans but"
+    >
+        Cliquez ici
+    </a>
 </body>
 </html>
